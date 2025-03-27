@@ -1,0 +1,36 @@
+/**
+ * @(#)SomaProduto.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class SomaProduto {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê os três números inteiros
+        System.out.print("Digite o primeiro número: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Digite o segundo número: ");
+        int num2 = scanner.nextInt();
+        System.out.print("Digite o terceiro número: ");
+        int num3 = scanner.nextInt();
+        
+        // Calcula a soma e o produto
+        int soma = num1 + num2 + num3;
+        int produto = num1 * num2 * num3;
+
+        // Imprime a soma e o produto com uma linha em branco entre as saídas
+        System.out.println();
+        System.out.println("Soma: " + soma);
+        System.out.println();
+        System.out.println("Produto: " + produto);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
