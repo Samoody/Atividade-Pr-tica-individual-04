@@ -1,0 +1,30 @@
+/**
+ * @(#)AreaTriangulo.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class AreaTriangulo {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê a base e a altura do triângulo
+        System.out.print("Digite a altura do triângulo: ");
+        double altura = scanner.nextDouble();
+        System.out.print("Digite a base do triângulo: ");
+        double base = scanner.nextDouble();
+
+        // Calcula a área do triângulo
+        double area = (base * altura) / 2;
+
+        // Exibe a área
+        System.out.println("A área do triângulo é: " + area);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
