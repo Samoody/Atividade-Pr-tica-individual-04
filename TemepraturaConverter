@@ -1,0 +1,29 @@
+/**
+ * @(#)TemperaturaConverter.java
+ *
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class TemperaturaConverter {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicita a temperatura em Celsius
+        System.out.print("Digite a temperatura em Celsius: ");
+        double celsius = scanner.nextDouble();
+        
+        // Calcula a temperatura equivalente em Fahrenheit
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        
+        // Exibe o valor da temperatura em Fahrenheit
+        System.out.printf("A temperatura em Fahrenheit é: %.2f°F\n", fahrenheit);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
