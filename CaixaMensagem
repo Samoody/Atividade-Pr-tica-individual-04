@@ -1,0 +1,31 @@
+/**
+ * @(#)CaixaMensagem.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+public class CaixaMensagem {
+    public static void main(String[] args) {
+        // A mensagem que será exibida dentro da caixa
+        String mensagem = "#somostodosnewtonwayden";
+        
+        // Calcula a largura da caixa com base no tamanho da mensagem
+        int largura = mensagem.length() + 2;
+
+        // Imprime a linha superior da caixa
+        for (int i = 0; i < largura; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+
+        // Imprime a mensagem dentro da caixa
+        System.out.println("*" + mensagem + "*");
+
+        // Imprime a linha inferior da caixa
+        for (int i = 0; i < largura; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}
