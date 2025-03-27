@@ -1,0 +1,35 @@
+/**
+ * @(#)CalculoTinta.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+public class CalculoTinta {
+    public static void main(String[] args) {
+        // Dados fornecidos
+        double precoLata = 50.00;  // Preço de cada lata
+        double litrosPorLata = 5.00;  // Litros por lata
+        double coberturaPorLitro = 3.00;  // Cobertura por litro (m² por litro)
+        int numComodos = 6;  // Número de cômodos
+        double areaPorComodo = 10.00;  // Área de cada cômodo em m²
+        
+        // Cálculo da área total a ser pintada
+        double areaTotal = numComodos * areaPorComodo;
+        
+        // Cálculo da quantidade de tinta necessária (em litros)
+        double tintaNecessaria = areaTotal / coberturaPorLitro;
+        
+        // Cálculo do número de latas necessárias
+        double latasNecessarias = Math.ceil(tintaNecessaria / litrosPorLata);  // Arredondado para cima
+        
+        // Cálculo do custo total
+        double custoTotal = latasNecessarias * precoLata;
+        
+        // Exibição dos resultados
+        System.out.printf("Área total a ser pintada: %.2f m²\n", areaTotal);
+        System.out.printf("Quantidade de tinta necessária: %.2f litros\n", tintaNecessaria);
+        System.out.printf("Número de latas necessárias: %.0f latas\n", latasNecessarias);
+        System.out.printf("Custo total para pintar: R$ %.2f\n", custoTotal);
+    }
+}
