@@ -1,0 +1,34 @@
+/**
+ * @(#)SomaMedia.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class SomaMedia {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Declarar uma variável para armazenar a soma dos números
+        double soma = 0;
+        
+        // Lê 5 números reais e acumula a soma
+        System.out.println("Digite 5 números reais:");
+        for (int i = 0; i < 5; i++) {
+            soma += scanner.nextDouble();  // Adiciona cada número à soma
+        }
+
+        // Calcula a média
+        double media = soma / 5;
+
+        // Exibe a soma e a média
+        System.out.println("Soma dos números: " + soma);
+        System.out.println("Média dos números: " + media);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
