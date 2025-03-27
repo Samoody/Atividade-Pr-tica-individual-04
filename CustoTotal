@@ -1,0 +1,33 @@
+/**
+ * @(#)QuadradoNumero.java
+ *
+ *
+ * @ Samuel Kleber vieira Silva
+ *Ra 12123150
+ * @version 1.00 2025/3/26
+ */
+import java.util.Scanner;
+
+public class CustoTotal {
+    public static void main(String[] args) {
+        // Criando o scanner para ler os dados do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicita a quantidade de produtos
+        System.out.print("Digite a quantidade de produtos: ");
+        int quantidade = scanner.nextInt();
+        
+        // Solicita o preço de custo de cada produto
+        System.out.print("Digite o preço de custo de cada produto: R$ ");
+        double precoCusto = scanner.nextDouble();
+        
+        // Calcula o custo total
+        double custoTotal = quantidade * precoCusto;
+        
+        // Exibe o valor do custo total
+        System.out.printf("O custo total de todos os itens é: R$ %.2f\n", custoTotal);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
