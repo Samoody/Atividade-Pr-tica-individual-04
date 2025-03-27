@@ -1,0 +1,29 @@
+/**
+ * @(#)PessoaIdadeAltura.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class PessoaIdadeAltura {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicita a idade da pessoa
+        System.out.print("Digite a sua idade: ");
+        int idade = scanner.nextInt();  // Lê a idade da pessoa
+        
+        // Solicita a altura da pessoa
+        System.out.print("Digite a sua altura (em metros): ");
+        double altura = scanner.nextDouble();  // Lê a altura da pessoa
+        
+        // Exibe a mensagem com a idade e a altura
+        System.out.println("Você tem " + idade + " anos e a sua altura é " + altura + " metros.");
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
