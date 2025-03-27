@@ -1,0 +1,39 @@
+/**
+ * @(#)LetrasAlfabeto.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class LetrasAlfabeto {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Declara um array para armazenar as 5 letras
+        char[] letras = new char[5];
+
+        // Lê as 5 letras
+        System.out.println("Digite 5 letras:");
+        for (int i = 0; i < 5; i++) {
+            letras[i] = scanner.next().charAt(0);  // Lê uma letra de cada vez
+        }
+
+        // Imprime cada letra em uma linha
+        System.out.println("Letras em cada linha:");
+        for (char letra : letras) {
+            System.out.println(letra);
+        }
+
+        // Imprime todas as letras na mesma linha
+        System.out.print("Letras na mesma linha: ");
+        for (char letra : letras) {
+            System.out.print(letra + " ");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
