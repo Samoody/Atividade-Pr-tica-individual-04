@@ -1,0 +1,22 @@
+/**
+ * @(#)Operacoes.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+public class Operacoes {
+    public static void main(String[] args) {
+        // Declara as variáveis e atribui valores
+        int num1 = 30;
+        int num2 = 15;
+
+        // Realiza a subtração e multiplicação
+        int subtracao = num1 - num2;
+        int multiplicacao = num1 * num2;
+
+        // Exibe o resultado
+        System.out.println("Subtração: " + subtracao);
+        System.out.println("Multiplicação: " + multiplicacao);
+    }
+}
