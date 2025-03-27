@@ -1,0 +1,36 @@
+/**
+ * @(#)PrestacaoAtraso.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class PrestacaoAtraso {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicita o valor da prestação em atraso
+        System.out.print("Digite o valor da prestação em atraso: R$ ");
+        double valorPrestacao = scanner.nextDouble();
+        
+        // Calcula o valor com acréscimo de 15%
+        double valorComAcrescimo = valorPrestacao * 1.15;
+        
+        // Calcula o valor final a pagar com desconto de 15% sobre o valor com acréscimo
+        double valorFinalPagar = valorComAcrescimo * 0.85;
+        
+        // Calcula o prejuízo do comerciante
+        double prejuizoComerciante = valorComAcrescimo - valorFinalPagar;
+        
+        // Exibe os resultados
+        System.out.printf("Valor com acréscimo (15%%): R$ %.2f\n", valorComAcrescimo);
+        System.out.printf("Valor final a pagar com desconto (15%%): R$ %.2f\n", valorFinalPagar);
+        System.out.printf("Prejuízo do comerciante: R$ %.2f\n", prejuizoComerciante);
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
