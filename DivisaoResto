@@ -1,0 +1,32 @@
+/**
+ * @(#)DivisaoResto.java
+ * @ Samuel Kleber Vieira Silva
+ * RA 12123150
+ * @version 1.00 2025/3/26
+ */
+
+import java.util.Scanner;
+
+public class DivisaoResto {
+    public static void main(String[] args) {
+        // Criando o scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê os dois números
+        System.out.print("Digite o primeiro número: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Digite o segundo número: ");
+        int num2 = scanner.nextInt();
+
+        // Realiza a divisão e calcula o resto
+        int divisao = num1 / num2;
+        int resto = num1 % num2;
+
+        // Imprime os números e o resto da divisão
+        System.out.printf("Os números são: %d e %d\n", num1, num2);
+        System.out.println("O resto da divisão de " + num1 + " por " + num2 + " é: " + resto);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
